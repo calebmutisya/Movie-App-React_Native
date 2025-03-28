@@ -22,6 +22,7 @@ export default function Index() {
         {moviesLoading ? (
           <ActivityIndicator size="large" color="#0000ff" className="mt-10 self-center" />
         ): moviesError ? (
+          // @ts-ignore
           <Text className="text-lg self-center  text-white font-bold mt-5 mb-3">Error : {moviesError?.message}</Text>
         ):(
           <View className="flex-1 mt-5">

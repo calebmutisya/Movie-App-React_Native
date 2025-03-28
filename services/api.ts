@@ -1,11 +1,13 @@
+import { env } from "process";
+
 export const TMBD_CONFIG = {
     BASE_URL: 'https://api.themoviedb.org/3',
     API_KEY: process.env.TMDB_API_KEY,
-    headers:{
+    headers: {
         accept: 'application/json',
         Authorization: `Bearer ${process.env.TMDB_API_KEY}`
     }
-}
+};
 
 export const fetchMovies = async ({query}: {query: string}) => {
 
