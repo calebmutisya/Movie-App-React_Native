@@ -1,11 +1,10 @@
-import { env } from "process";
 
 export const TMBD_CONFIG = {
     BASE_URL: 'https://api.themoviedb.org/3',
-    API_KEY: process.env.TMDB_API_KEY,
+    API_KEY: "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkODRiNjNjMTJlYTc4ZTYzNWUxMTU1ZmMyNjQ2NWQxYiIsIm5iZiI6MTc0MzA3MTI2MC44OTY5OTk4LCJzdWIiOiI2N2U1MjgxYzVmM2UwYWMxODgwMDIzOTEiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.nTIhgkKjXUBcLqxZy4KxSrli-9ygssljIe8o4pXRtbs",
     headers: {
         accept: 'application/json',
-        Authorization: `Bearer ${process.env.TMDB_API_KEY}`
+        Authorization: `Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkODRiNjNjMTJlYTc4ZTYzNWUxMTU1ZmMyNjQ2NWQxYiIsIm5iZiI6MTc0MzA3MTI2MC44OTY5OTk4LCJzdWIiOiI2N2U1MjgxYzVmM2UwYWMxODgwMDIzOTEiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.nTIhgkKjXUBcLqxZy4KxSrli-9ygssljIe8o4pXRtbs`
     }
 };
 
